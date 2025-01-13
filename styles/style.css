@@ -14,7 +14,7 @@
 
   background: rgb(82, 195, 3);
   transition: background-color 0.3s ease;
-  width: 200px;
+  min-width: 200px;
   height: 45px;
   /* Auto layout */
   display: flex;
@@ -31,9 +31,12 @@
 }
 body {
   max-width: 1360px;
+  margin: 0 auto;
 }
 
 #hero {
+  height: 652px;
+  border-radius: 10px;
   background: linear-gradient(
       180deg,
       rgb(16, 16, 16) -19.5%,
@@ -43,7 +46,6 @@ body {
 
   /* position: absolute; */
 
-  height: 652px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -53,14 +55,12 @@ body {
 }
 
 .hero_container {
-  position: absolute;
   max-width: 726px;
   height: 277px;
 
-  /* Auto layout */
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 23px;
   padding: 0px;
@@ -202,6 +202,7 @@ body {
 }
 
 footer {
+  border-radius: 10px;
   background-color: burlywood;
   height: 300px;
   display: flex;
